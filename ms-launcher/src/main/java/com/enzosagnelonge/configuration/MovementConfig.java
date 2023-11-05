@@ -1,6 +1,6 @@
 package com.enzosagnelonge.configuration;
 
-import com.enzosagnelonge.adapters.postgre.MongoDbMovementAdapter;
+import com.enzosagnelonge.adapters.mongodb.MongoDbMovementAdapter;
 import com.enzosagnelonge.ports.api.MovementServicePort;
 import com.enzosagnelonge.ports.spi.MovementPersistencePort;
 import com.enzosagnelonge.service.MovementServiceImpl;

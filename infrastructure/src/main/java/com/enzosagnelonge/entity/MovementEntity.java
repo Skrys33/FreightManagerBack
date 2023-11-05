@@ -7,9 +7,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -23,8 +20,6 @@ public class MovementEntity {
         OUT
     }
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     UUID id;
     LocalDateTime creationDateTime;
     String creationUser;

@@ -1,4 +1,4 @@
-package com.enzosagnelonge.adapters.postgre;
+package com.enzosagnelonge.adapters.mongodb;
 
 import com.enzosagnelonge.data.Movement;
 import com.enzosagnelonge.ports.spi.MovementPersistencePort;
