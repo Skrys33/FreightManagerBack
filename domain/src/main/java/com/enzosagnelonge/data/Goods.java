@@ -13,8 +13,7 @@ import java.util.UUID;
 @Builder
 @Data
 public class Goods {
-    UUID id;
-    String referenceType; 
+    String referenceType;
     String reference; 
     int quantity; 
     double weight;

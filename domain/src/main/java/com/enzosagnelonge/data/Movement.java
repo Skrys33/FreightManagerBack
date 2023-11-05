@@ -28,9 +28,9 @@ public class Movement {
     LocalDateTime movementDateTime;
     String location;
     Goods goods;
+    Warehouse fromWarehouse;
+    Warehouse toWarehouse;
     String customsStatus;
-    String codeWarehouse;
-    String labelWarehouse;
     String referenceAuthorization;
     String typeAuthorization;
     TypeMovement typeMovement;
@@ -44,8 +44,8 @@ public class Movement {
 
         // Header
         Element headerNode = doc.createElement("Header");
-        headerNode.setAttribute("from", "RAPIDCARGO"); // TODO : REVIEW
-        headerNode.setAttribute("to", "CARGOINFO"); // TODO : REVIEW
+        headerNode.setAttribute("from","RAPIDCARGO");
+        headerNode.setAttribute("to", "CARGOINFO");
         headerNode.setAttribute("messageTime", this.creationDateTime.toString());
         headerNode.setAttribute("messageId", this.id.toString()); // TODO : REVIEW
         rootElement.appendChild(headerNode);
@@ -59,17 +59,35 @@ public class Movement {
         movementDatTimeNode.appendChild(doc.createTextNode(this.movementDateTime.toString()));
         movementNode.appendChild(movementDatTimeNode);
 
-            // DECLARE IN
-        Element declareInNode = doc.createElement("declareIn");
-        declareInNode.setAttribute("code", this.codeWarehouse);
-        declareInNode.setAttribute("label", this.labelWarehouse);
-        movementNode.appendChild(declareInNode);
+        Warehouse declaredInWarehouse = null;
+        Warehouse fromToWarehouse = null;
+        String fromToLabel = "";
+        switch (this.typeMovement){
+            case In:
+                declaredInWarehouse = this.toWarehouse;
+                fromToWarehouse = this.fromWarehouse;
+                break;
+            case Out:
+                declaredInWarehouse = this.fromWarehouse;
+                fromToWarehouse = this.toWarehouse;
+                break;
+        }
 
-            // FROM
-        Element fromNode = doc.createElement("from");
-        fromNode.setAttribute("code", ""); // TODO : REVIEW
-        fromNode.setAttribute("label", ""); // TODO : REVIEW
-        movementNode.appendChild(fromNode);
+        // DECLARE IN
+        if (declaredInWarehouse != null){
+            Element declareInNode = doc.createElement("declareIn");
+            declareInNode.setAttribute("code", declaredInWarehouse.code);
+            declareInNode.setAttribute("label", declaredInWarehouse.label);
+            movementNode.appendChild(declareInNode);
+        }
+
+        // FROM / TO
+        if (declaredInWarehouse != null) {
+            Element fromNode = doc.createElement(fromToLabel);
+            fromNode.setAttribute("code", fromToWarehouse.code);
+            fromNode.setAttribute("label", fromToWarehouse.label);
+            movementNode.appendChild(fromNode);
+        }
 
             // GOODS
         movementNode.appendChild(this.goods.toXML(doc));

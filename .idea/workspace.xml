@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="151bd4ad-7f2b-4a72-b5f4-2b8b91730c26" name="Changes" comment="">
+    <list default="true" id="151bd4ad-7f2b-4a72-b5f4-2b8b91730c26" name="Changes" comment="Remove PostgresSQL conf">
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/enzosagnelonge/data/Warehouse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/enzosagnelonge/controller/GoodsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/enzosagnelonge/adapters/postgre/GoodsPostgreAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/enzosagnelonge/adapters/postgre/MongoDbMovementAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/com/enzosagnelonge/adapters/mongodb/MongoDbMovementAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/enzosagnelonge/adapters/postgre/MovementPostgreAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/enzosagnelonge/repository/postgre/PostgreSQLGoodsRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/enzosagnelonge/repository/postgre/PostgreSQLMovementRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-launcher/src/main/java/com/enzosagnelonge/configuration/GoodsConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-launcher/src/main/java/com/enzosagnelonge/configuration/MovementConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-launcher/src/main/java/com/enzosagnelonge/configuration/MovementConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/enzosagnelonge/controller/MovementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/com/enzosagnelonge/controller/MovementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/enzosagnelonge/data/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/enzosagnelonge/data/Goods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/enzosagnelonge/data/Movement.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/enzosagnelonge/data/Movement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-launcher/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-launcher/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -238,11 +233,23 @@
       <workItem from="1699124263143" duration="6597000" />
       <workItem from="1699130899532" duration="19016000" />
       <workItem from="1699177669050" duration="5394000" />
-      <workItem from="1699183337318" duration="3728000" />
+      <workItem from="1699183337318" duration="6918000" />
     </task>
+    <task id="LOCAL-00001" summary="Remove PostgresSQL conf">
+      <created>1699209478596</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699209478596</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Remove PostgresSQL conf" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove PostgresSQL conf" />
   </component>
 </project>

@@ -17,6 +17,7 @@ public class MovementController {
     private MovementServicePort movementServicePort;
 
     @PostMapping("/add")
+    @CrossOrigin(origins = "http://localhost:4200")
     public  ResponseEntity<String> addMovement(@RequestBody Movement movement){
         try {
             movementServicePort.addMovement(movement);
@@ -28,6 +29,7 @@ public class MovementController {
     }
 
     @GetMapping("/latest")
+    @CrossOrigin(origins = "http://localhost:4200")
     public List<Movement> getLatestMovements(@RequestParam(name = "limit", defaultValue = "50") int limit){
         return movementServicePort.getLatestMovements(limit);
     }
