@@ -95,7 +95,6 @@ public class GmailService {
             System.out.println("Draft id: " + message.getId());
             System.out.println(message.toPrettyString());
         } catch (GoogleJsonResponseException e) {
-            // TODO(developer) - handle error appropriately
             GoogleJsonError error = e.getDetails();
             if (error.getCode() == 403) {
                 System.err.println("Unable to create draft: " + e.getDetails());

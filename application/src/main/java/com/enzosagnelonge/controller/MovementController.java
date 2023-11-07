@@ -3,6 +3,7 @@ package com.enzosagnelonge.controller;
 import com.enzosagnelonge.data.Movement;
 import com.enzosagnelonge.ports.api.MovementServicePort;
 import com.enzosagnelonge.services.GmailService;
+import com.enzosagnelonge.services.MailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,29 +21,20 @@ import java.util.Map;
 @RestController
 @RequestMapping("/movement")
 public class MovementController {
-
     @Autowired
     private MovementServicePort movementServicePort;
+    @Autowired
+    private MailService mailService;
 
     @PostMapping("/add")
     @CrossOrigin(origins = "http://localhost:4200")
     public  ResponseEntity<String> addMovement(@RequestBody Movement movement){
         try {
             Movement createdMovement = movementServicePort.addMovement(movement);
-            new GmailService().sendMail(createdMovement);
-
+            // new GmailService().sendMail(createdMovement);
+            mailService.sendMail(createdMovement);
         } catch (RuntimeException e) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
-        } catch (GeneralSecurityException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        } catch (ParserConfigurationException e) {
-            throw new RuntimeException(e);
-        } catch (TransformerException e) {
-            throw new RuntimeException(e);
-        } catch (MessagingException e) {
-            throw new RuntimeException(e);
         }
 
         return  ResponseEntity.ok().build();

@@ -4,29 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="151bd4ad-7f2b-4a72-b5f4-2b8b91730c26" name="Changes" comment="Remove PostgresSQL conf">
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/enzosagnelonge/services/GmailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/enzosagnelonge/services/MailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/main/java/com/enzosagnelonge/services/XMLMovementConverterService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/enzosagnelonge/services/MovementServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="151bd4ad-7f2b-4a72-b5f4-2b8b91730c26" name="Changes" comment="XMLMovementConverterService&#10;MailService&#10;GmailService&#10;Movement Validators">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/src/main/java/com/enzosagnelonge/controller/MovementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/com/enzosagnelonge/controller/MovementController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/enzosagnelonge/data/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/enzosagnelonge/data/Goods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/enzosagnelonge/data/Movement.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/enzosagnelonge/data/Movement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/enzosagnelonge/service/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/enzosagnelonge/services/GoodsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/enzosagnelonge/service/MovementServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/test/java/XMLTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/test/java/XMLTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/enzosagnelonge/adapters/mongodb/MongoDbMovementAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/com/enzosagnelonge/adapters/mongodb/MongoDbMovementAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/enzosagnelonge/entity/MovementEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/com/enzosagnelonge/entity/MovementEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/com/enzosagnelonge/repository/mongodb/SpringDataMongoMovementRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/com/enzosagnelonge/repository/mongodb/SpringDataMongoMovementRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/resources/credentials.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/MailTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/test/java/MailTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/enzosagnelonge/services/GmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/com/enzosagnelonge/services/GmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/enzosagnelonge/services/MailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/com/enzosagnelonge/services/MailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/enzosagnelonge/services/MovementServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/enzosagnelonge/services/MovementServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/test/java/MailTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-launcher/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-launcher/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-launcher/src/main/java/com/enzosagnelonge/configuration/MovementConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-launcher/src/main/java/com/enzosagnelonge/configuration/MovementConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-launcher/src/main/java/com/enzosagnelonge/FreightManagerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-launcher/src/main/java/com/enzosagnelonge/FreightManagerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-launcher/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ms-launcher/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +65,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "azul-17",
-    "last_opened_file_path": "C:/Users/enzos/.source/4SH/FreightManagerFront",
+    "last_opened_file_path": "C:/Users/enzos/.source/4SH/FreightManagerBack",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -83,7 +74,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.24395859",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
     "spring.configuration.checksum": "9ee9c3fed0ee1846d124c1e679ad03dc",
     "vue.rearranger.settings.migration": "true"
   },
@@ -95,11 +86,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\enzos\.source\4SH\FreightManagerBack" />
       <recent name="C:\Users\enzos\.source\4SH\feightmanager3\application\src\main\java\com\enzosagnelonge\controller" />
       <recent name="C:\Users\enzos\.source\4SH\feightmanager3\ms-launcher\src\main\resources" />
       <recent name="C:\Users\enzos\.source\4SH\feightmanager3\infrastructure\src\main\resources" />
       <recent name="C:\Users\enzos\.source\4SH\feightmanager3\infrastructure\src\main\java\com\enzosagnelonge\repository" />
-      <recent name="C:\Users\enzos\.source\4SH\feightmanager3\application\src\main\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\enzos\.source\4SH\FreightManagerBack\application\src\main\resources" />
@@ -116,7 +107,7 @@
       <recent name="com.enzosagnelonge.ports.api" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.FreightManagerApplication">
+  <component name="RunManager" selected="Maven.FreightManagerBack [clean,package...]">
     <configuration name="GmailQuickstart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.enzosagnelonge.utils.GmailQuickstart" />
       <module name="infrastructure" />
@@ -137,12 +128,57 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XMLTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="XMLTest" />
-      <module name="domain" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="FreightManagerBack [clean,package...]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="package" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="FreightManagerBack [install]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
     <configuration name="feightmanager3 [clean]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
@@ -207,10 +243,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="compose.yaml.freight-manager-back: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="services">
+            <list>
+              <option value="freight-manager-back" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.GmailQuickstart" />
       <item itemvalue="Application.MailTest" />
-      <item itemvalue="Application.XMLTest" />
+      <item itemvalue="Docker.compose.yaml.freight-manager-back: Compose Deployment" />
+      <item itemvalue="Docker.compose.yaml: Compose Deployment" />
+      <item itemvalue="Maven.FreightManagerBack [clean,package...]" />
+      <item itemvalue="Maven.FreightManagerBack [install]" />
       <item itemvalue="Maven.feightmanager3 [package]" />
       <item itemvalue="Maven.feightmanager3 [clean]" />
       <item itemvalue="Spring Boot.FreightManagerApplication" />
@@ -218,9 +283,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.FreightManagerApplication" />
+        <item itemvalue="Docker.compose.yaml.freight-manager-back: Compose Deployment" />
+        <item itemvalue="Docker.compose.yaml: Compose Deployment" />
         <item itemvalue="Application.MailTest" />
         <item itemvalue="Application.GmailQuickstart" />
-        <item itemvalue="Application.XMLTest" />
       </list>
     </recent_temporary>
   </component>
@@ -239,6 +305,8 @@
       <workItem from="1699177669050" duration="5394000" />
       <workItem from="1699183337318" duration="10420000" />
       <workItem from="1699272853928" duration="19714000" />
+      <workItem from="1699345088839" duration="2008000" />
+      <workItem from="1699355698211" duration="18133000" />
     </task>
     <task id="LOCAL-00001" summary="Remove PostgresSQL conf">
       <created>1699209478596</created>
@@ -247,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699209478596</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="XMLMovementConverterService&#10;MailService&#10;GmailService&#10;Movement Validators">
+      <created>1699345289143</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699345289143</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,17 +330,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Remove PostgresSQL conf" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove PostgresSQL conf" />
+    <MESSAGE value="XMLMovementConverterService&#10;MailService&#10;GmailService&#10;Movement Validators" />
+    <option name="LAST_COMMIT_MESSAGE" value="XMLMovementConverterService&#10;MailService&#10;GmailService&#10;Movement Validators" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/application/src/main/java/com/enzosagnelonge/controller/MovementController.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/application/src/main/java/com/enzosagnelonge/services/MailService.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

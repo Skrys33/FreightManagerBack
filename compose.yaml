@@ -33,6 +33,18 @@ services:
     depends_on:
       - mongo
 
+  freight-manager-back:
+    image: freight-manager-back:spring-docker
+    container_name: freight-manager-back
+    ports:
+      - "0.0.0.0:8080:8080"
+    networks:
+      - MONGO
+    depends_on:
+      - mongo
+    volumes:
+      - ./smtp-config.properties:/app/smtp-config.properties
+
 networks:
   MONGO:
     name: MONGO
