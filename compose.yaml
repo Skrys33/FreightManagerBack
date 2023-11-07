@@ -42,8 +42,6 @@ services:
       - MONGO
     depends_on:
       - mongo
-    volumes:
-      - ./smtp-config.properties:/app/smtp-config.properties
 
 networks:
   MONGO:
