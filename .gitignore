@@ -36,3 +36,4 @@ build/
 
 ### Mac OS ###
 .DS_Store
+/application/src/main/resources/gmail_client_secret.json

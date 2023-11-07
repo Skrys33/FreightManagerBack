@@ -1,4 +1,4 @@
-package com.enzosagnelonge.service;
+package com.enzosagnelonge.services;
 
 
 import com.enzosagnelonge.data.Goods;

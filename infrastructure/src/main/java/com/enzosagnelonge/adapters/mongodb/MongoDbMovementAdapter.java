@@ -1,10 +1,12 @@
 package com.enzosagnelonge.adapters.mongodb;
 
 import com.enzosagnelonge.data.Movement;
+import com.enzosagnelonge.entity.MovementEntity;
 import com.enzosagnelonge.ports.spi.MovementPersistencePort;
 import com.enzosagnelonge.repository.mongodb.SpringDataMongoMovementRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -23,22 +25,14 @@ public class MongoDbMovementAdapter implements MovementPersistencePort {
         return orderRepository.save(movement);
     }
 
-    /*  @Override
-    public List<MovementDto> getLatestMovements(int limit) {
-
-        Sort sort = Sort.by(Sort.Order.desc("creationDateTime"));
-        Query query = new Query().with(sort).limit(limit);
-
-        return mongoTemplate.find(query, MovementDto.class);
-    } */
-
-    @Override
+      @Override
     public List<Movement> getLatestMovements(int limit) {
-        return orderRepository.findAll();//orderRepository.getLatestMovements(limit);
+        return orderRepository.getLatestMovements(limit);
     }
+
 
     @Override
     public Boolean hasMovementInReferenceDeclared(String reference) {
-        return orderRepository.hasMovementInReferenceDeclared(reference) != null;
+        return orderRepository.hasMovementInReferenceDeclared(reference).size() != 0;
     }
 }

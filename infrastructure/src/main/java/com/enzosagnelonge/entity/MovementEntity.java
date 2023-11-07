@@ -16,8 +16,8 @@ import java.util.UUID;
 @Builder
 public class MovementEntity {
     public enum TypeMovement {
-        IN,
-        OUT
+        In,
+        Out
     }
 
     UUID id;

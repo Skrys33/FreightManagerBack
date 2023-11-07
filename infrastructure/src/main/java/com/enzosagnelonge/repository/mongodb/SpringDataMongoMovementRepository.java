@@ -12,8 +12,8 @@ import java.util.UUID;
 
 @Repository
 public interface SpringDataMongoMovementRepository extends MongoRepository<Movement, UUID> {
-    @Query("{'type': 'In', 'goods.reference': ?0}")
-    MovementEntity hasMovementInReferenceDeclared(String reference);
+    @Query("{'typeMovement': 'In', 'goods.reference': ?0}")
+    List<Movement> hasMovementInReferenceDeclared(String reference);
 
     @Aggregation(pipeline = {
             "{ '$sort' : { 'movementDateTime' : -1 } }",
